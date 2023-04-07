@@ -18,8 +18,8 @@ public class CarTest {
 
     public Car produceCar(String name) {
         Car car = null;
-        CarFactory carFactory = new CarFactory();
-        car = carFactory.createCar(name);
+        CarFactory carFactory = new HyundaiFactory(); //
+        car = carFactory.createCar(name); // 어느 공장을 선택하거나 동일한 작업인 ㅇ왜 why? factory 에서 상속받을것이기대문!
         return car;
     }
 
