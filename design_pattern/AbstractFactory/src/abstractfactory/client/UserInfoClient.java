@@ -50,6 +50,8 @@ public class UserInfoClient {
             return;
         }
 
+        // 동일한 메소드를 구현했으니까 어떤 db인지 알빠노?  동일한 메소드 구현이기때문에
+
         userInfoDao = daoFactory.createUserInfoDao();
         productDao = daoFactory.createProductDao();
 
