@@ -1,4 +1,4 @@
-package _02._ch01;
+package _02.ch01;
 
 public class FunctionTest {
     public static void main(String[] args) {
