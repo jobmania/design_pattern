@@ -1,4 +1,4 @@
-package _02.ch06;
+package _02.ch06_Exam;
 
 public class Bus {
     int busNumber;

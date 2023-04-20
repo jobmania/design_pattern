@@ -1,4 +1,4 @@
-package _02.ch06;
+package _02.ch06_Exam;
 
 public class StudentTest {
     public static void main(String[] args) {
