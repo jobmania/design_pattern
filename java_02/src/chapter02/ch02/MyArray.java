@@ -69,8 +69,9 @@ public class MyArray {
 
         ret = intArr[position];
         // 삭제한 빈 곳에 하나씩 왼쪽으로 옮기기
-        for (int i = position; i < count ; i++) {
-            intArr[i] = intArr[i + 1];
+        for (int i = position; i < count-1 ; i++) {
+
+                intArr[i] = intArr[i + 1];
         }
         count--;
         return ret;
