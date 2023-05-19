@@ -1,4 +1,4 @@
-package chapter03;
+package chapter03.ch01;
 
 public class Water {
     @Override

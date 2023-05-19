@@ -1,4 +1,4 @@
-package chapter03;
+package chapter03.ch01;
 
 public class GenericPrinter<T> {
     private T material; // 컴파일 타임때 변환이 이루어진다.
