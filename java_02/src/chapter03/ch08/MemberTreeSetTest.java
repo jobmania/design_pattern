@@ -5,9 +5,9 @@ public class MemberTreeSetTest {
         MemberTreeSet memberTreeSet = new MemberTreeSet();
 
         Member member1 = new Member(1001, "엄준식");
-        Member member2 = new Member(1002, "섹식");
-        Member member3 = new Member(1003, "샥준식");
-        Member member4 = new Member(1005, "비준식");
+        Member member2 = new Member(1002, "김식");
+        Member member3 = new Member(1003, "나준식");
+        Member member4 = new Member(1005, "다준식");
 
         memberTreeSet.addMember(member1);
         memberTreeSet.addMember(member2);

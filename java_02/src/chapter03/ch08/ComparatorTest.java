@@ -8,7 +8,7 @@ import java.util.TreeSet;
 public class ComparatorTest {
     public static void main(String[] args) {
 
-        Set<String> set = new TreeSet<String>(new MyCompare()); // 구현체
+        Set<String> set = new TreeSet<String>(new MyCompare()); // 정렬 지정 . 구현체
         set.add("aaa");
         set.add("baa");
         set.add("daa");
