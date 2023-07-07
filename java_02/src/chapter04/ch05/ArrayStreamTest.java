@@ -16,5 +16,7 @@ public class ArrayStreamTest {
 
         //최종연산 foreach, count, sum ..
 
+        int sum = Arrays.stream(arr).reduce(0, (a, b) -> a + b);// ( initial 값, 연산)
+        System.out.println("sum = " + sum);
     }
 }
