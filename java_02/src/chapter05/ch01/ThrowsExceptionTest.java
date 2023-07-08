@@ -19,7 +19,7 @@ public class ThrowsExceptionTest {
         } catch (FileNotFoundException e) {
             System.out.println(e);
         } catch (Exception e){
-            // 최종 처리 
+            // 최종 처리
         }
 
         System.out.println("done");
