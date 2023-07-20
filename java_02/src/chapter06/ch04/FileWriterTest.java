@@ -1,28 +1,29 @@
 package chapter06.ch04;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileReaderTest {
+public class FileWriterTest {
 
     public static void main(String[] args) {
 
         // 문자 읽기 .. Raader 클래스들은 문자를 읽는다. 
-        try(FileReader fis = new FileReader("reader.txt")) {
+        try(FileWriter fw = new FileWriter("writer.txt", true)) {
+            fw.write('A');
+            char buf[] = {'B', 'C', 'D'};
 
-            int i ;
-            while ((i = fis.read()) != -1){
-                System.out.print((char) i);
-            }
-            System.out.println("end");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            fw.write(buf);
+            fw.write("안녕하세용!! \n ");
+            fw.write(buf,1,2);
+            fw.write(65);
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+        System.out.println("end");
 
     }
 }

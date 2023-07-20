@@ -2,18 +2,17 @@ package chapter06.ch01;
 
 import java.io.IOException;
 
-public class SystemInTestA {
+public class SystemInTestB {
 
     public static void main(String[] args) {
-        System.out.println("알파벳 하나를 쓰고 [enter]를 누르세요!! ");
+        System.out.println("알파벳 여러개 를 쓰고 [enter]를 누르세요!! ");
 
         int i ;
         try {
-            i = System.in.read();
+            while ( (i = System.in.read()) != '\n'){
+                System.out.println((char) i);
 
-
-            System.out.println(i);
-            System.out.println((char) i);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

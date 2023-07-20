@@ -1,19 +1,17 @@
-package chapter06.ch04;
+package chapter06.ch05;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class FileReaderTest {
-
+public class FileInputStreamTest1 {
     public static void main(String[] args) {
-
-        // 문자 읽기 .. Raader 클래스들은 문자를 읽는다.
-        try(FileReader fis = new FileReader("reader.txt")) {
+        // inputstreamReader
+        try(InputStreamReader ir = new InputStreamReader(new FileInputStream("reader.txt")))  {
 
             int i ;
-            while ((i = fis.read()) != -1){
+            while ((i = ir.read()) != -1){
                 System.out.print((char) i);
             }
             System.out.println("end");
